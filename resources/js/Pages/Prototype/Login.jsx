@@ -40,21 +40,23 @@ export default function Login() {
                             <div>
                                 <InputLabel 
                                     forInput="password"
-                                    value="password"
+                                    value="Password"
                                 />
                                     <TextInput 
                                         type="password"
                                         name="password"
-                                        placeholder="password"
+                                        placeholder="Password"
                                     />
                             </div>
                         </div>
                         <div className="grid space-y-[14px] mt-[30px]">
-                            <PrimaryButton type="button" variant="primary">
-                                <span className="text-base font-semibold">
-                                    Start Watching
-                                </span>
-                            </PrimaryButton>
+                            <Link href={route('prototype.dashboard')}>
+                                <PrimaryButton type="button" variant="primary">
+                                    <span className="text-base font-semibold">
+                                        Start Watching
+                                    </span>
+                                </PrimaryButton>
+                            </Link>
                             <Link href={route('prototype.register')}>
                                 <PrimaryButton type="button" variant="light-outline">
                                     <span className="text-base text-white">
